@@ -4,3 +4,4 @@ Servers/
 .settings/
 target/
 *.project
+/.recommenders/
