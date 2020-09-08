@@ -22,5 +22,4 @@ public class ListController implements Controller {
 		mav.addObject("list", deptDao.selectAll());
 		return mav;
 	}
-
 }
