@@ -8,12 +8,16 @@
 		<property name="urlMap">
 			<props>
 				<prop key="/index.bit">index</prop>
+				<prop key="/dept/list.bit">deptList</prop>
 			</props>
 		</property>
 	</bean>
 	
 	<bean id="index" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
 		<property name="viewName" value="index"/>
+	</bean>
+	<bean id="deptList" class="com.bit.framework.dept.controller.ListController">
+		<property name="deptDao" ref="deptDao"></property>
 	</bean>
 
 	<bean id="viewResolver" 
