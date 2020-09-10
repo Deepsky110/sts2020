@@ -19,7 +19,7 @@ public class DeptService01Impl implements DeptService {
 
 	public void insert(DeptVo bean) throws SQLException {
 		deptDao.insertOne(bean);
-		for(DeptVo bean2 : list()) {
+		for(DeptVo bean2 : lrist()) {
 			System.out.println(bean2);
 		}
 	}
